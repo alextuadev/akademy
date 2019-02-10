@@ -15,5 +15,6 @@ func Run() {
 	}
 	e := echo.New()
 	e.Static("/", "dist/ui")
+	registerRoutes(e)
 	e.Logger.Fatal(e.Start(":" + port))
 }
