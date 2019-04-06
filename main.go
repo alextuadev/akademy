@@ -1,7 +1,9 @@
 package main
 
-import "github.com/imkernel/akademy/cmd/akademy"
+import (
+	"github.com/imkernel/akademy/cmd/server"
+)
 
 func main() {
-	akademy.Run()
+	server.Run()
 }
