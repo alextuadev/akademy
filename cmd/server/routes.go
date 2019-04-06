@@ -16,7 +16,7 @@ func createRoutes(e *echo.Echo) {
 }
 
 func serveUI(e *echo.Echo) {
-	e.Static("/", "public")
+	e.Static("/", "ui/webapp")
 }
 
 func createAdminRoutes(g *echo.Group) {
