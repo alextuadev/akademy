@@ -5,5 +5,27 @@ import (
 )
 
 func createRoutes(e *echo.Echo) {
+	adminGroup := e.Group("/admin")
+	createAdminRoutes(adminGroup)
+
+	userGroup := e.Group("/users")
+	createUserRoutes(userGroup)
+
+	deptGroup := e.Group("/dept")
+	createDeptRoutes(deptGroup)
+}
+
+func serveUI(e *echo.Echo) {
+	e.Static("/", "public")
+}
+
+func createAdminRoutes(g *echo.Group) {
+}
+
+func createUserRoutes(g *echo.Group) {
+
+}
+
+func createDeptRoutes(g *echo.Group) {
 
 }
